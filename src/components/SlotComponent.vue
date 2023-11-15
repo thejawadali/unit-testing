@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Welcome!</h1>
+    <slot name="header" />
     <main>
       <slot />
     </main>
     <footer>
-      Thanks for visiting.
+      <slot name="footer" />
     </footer>
   </div>
 </template>

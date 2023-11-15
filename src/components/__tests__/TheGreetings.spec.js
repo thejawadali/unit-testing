@@ -34,3 +34,18 @@ describe( 'testing props', async () => {
     expect( h1.text() ).toBe( greetMsg )
   } )
 } )
+
+// testing computed properties
+describe("testing computed properties", () => {
+  it("renders the formatted name correctly", () => {
+    const wrapper = shallowMount(TheGreetings, {
+      props: {
+        greeting: "Hello World",
+        ha: true
+      }
+    })
+    // The vm (Vue Model) contains the component's state, methods, and computed properties.
+    const formattedName = wrapper.vm.formattedName
+    expect(formattedName).toBe("John Doe")
+  })
+})

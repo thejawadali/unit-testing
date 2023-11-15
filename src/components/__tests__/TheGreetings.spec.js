@@ -49,3 +49,17 @@ describe("testing computed properties", () => {
     expect(formattedName).toBe("John Doe")
   })
 })
+
+// testing emitted events
+describe("testing emitted events", () => {
+  it("emits an event on button click", () => {
+    const wrapper = shallowMount(TheGreetings, {
+      props: {
+        greeting: "Hello World",
+        ha: true
+      }
+    })
+    wrapper.find("p").trigger("click")
+    expect(wrapper.emitted()).toHaveProperty("click")
+  })
+})

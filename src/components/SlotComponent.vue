@@ -1,6 +1,9 @@
 <template>
   <div>
-    <slot name="header" />
+    <nav>
+      <slot name="header" />
+    </nav>
+    <slot name="scoped" v-bind="{ msg }" />
     <main>
       <slot />
     </main>
@@ -11,5 +14,5 @@
 </template>
 
 <script setup>
-
+const msg = "this is a custom messages from scoped slot"
 </script>

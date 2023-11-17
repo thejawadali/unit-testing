@@ -1,9 +1,9 @@
 <script setup>
-import TheGreetings from "./components/TheGreetings.vue";
+import ThePosts from "./components/ThePosts.vue";
 </script>
 
 <template>
-  <TheGreetings></TheGreetings>
+  <ThePosts></ThePosts>
 </template>
 
 <style scoped></style>

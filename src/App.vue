@@ -1,9 +1,9 @@
 <script setup>
-import ThePosts from "./components/ThePosts.vue";
+import LoginForm from './components/LoginForm.vue';
 </script>
 
 <template>
-  <ThePosts></ThePosts>
+  <LoginForm></LoginForm>
 </template>
 
 <style scoped></style>
